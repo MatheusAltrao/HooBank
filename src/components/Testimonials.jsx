@@ -8,8 +8,7 @@ const Testimonials = () => {
   return (
     <section id='clients' className={`${styles.paddingY} flex justify-center items-center flex-col relative`} >
 
-      <div className='absolute z-5 w-[300px] h-[300px] top-0 right-[100px] rounded-full 
-      sm:hidden  blue__gradient' />
+      <div className=' sm:flex hidden  absolute z-5 w-[300px] h-[300px] top-0 right-[100px] rounded-full blue__gradient' />
 
       <div className='w-full flex justify-between items-center md:flex-row flex-col sm:mb-16 mb-6 relative z-1'>
         <h1 data-aos="fade-right" className={styles.heading2} >What people are <br className='sm:block hidden' /> saying about us</h1>
