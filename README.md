@@ -24,4 +24,4 @@ Figma: https://www.figma.com/proto/bUGIPys15E78w9bs1l4tgS/HooBank?node-id=310%3A
 
 ## 🔗 Web:
 
-Deploy: https://vercel.com/matheusaltrao/hoo-bank
+Deploy: https://hoo-bank-bwo771gmg-matheusaltrao.vercel.app/
