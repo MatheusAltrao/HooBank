@@ -25,9 +25,6 @@ body{
   @apply overflow-x-hidden;
 }
 
-  .trasitionall{
-    transition:all 0.5 ease;
-  }
 
 .text-gradient {
   background: radial-gradient(
