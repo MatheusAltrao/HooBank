@@ -1,9 +1,8 @@
 import React from 'react'
-import styles from "../src/style";
-import AOS from 'aos';
+
 import 'aos/dist/aos.css';
-
-
+import { useState, useEffect, useRef } from 'react';
+import { Transition, CSSTransition, SwitchTransition, TransitionGroup } from "react-transition-group";
 
 import {
   Navbar,
@@ -16,9 +15,28 @@ import {
   CTA,
   Testimonials,
   Footer,
+  ButtonTop
 } from './components'
 
+
 const App = () => {
+
+
+  const [backToTopButton, setBackToTopButton] = useState(false)
+
+  useEffect(() => {
+    window.addEventListener('scroll', () => {
+
+      if (scrollY > 500) {
+        setBackToTopButton(true)
+      } else {
+        setBackToTopButton(false)
+      }
+    })
+  }, [])
+
+
+
   return (
     <div className="w-full overflow-hidden xl:max-w-[1300px] mx-auto">
       <div className='sm:px-20 px-6  '>
@@ -43,6 +61,20 @@ const App = () => {
           <Clients />
           <CTA />
           <Footer />
+
+
+          {backToTopButton && (
+
+
+            <ButtonTop opacity='opacity-100' />
+
+
+          )}
+
+
+
+
+
         </div>
       </div>
 

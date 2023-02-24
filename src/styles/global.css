@@ -25,6 +25,10 @@ body{
   @apply overflow-x-hidden;
 }
 
+  .trasitionall{
+    transition:all 0.5 ease;
+  }
+
 .text-gradient {
   background: radial-gradient(
     64.18% 64.18% at 71.16% 35.69%,
@@ -91,22 +95,13 @@ body{
   box-shadow: 0px 20px 80px -10px rgba( 0, 206, 209, 1 );
 }
 
-
-/*
-.sidebar {
-  -webkit-animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-}
-  */
+  
 
 
 .sidebarRight{
   -webkit-animation:  slide-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation:  slide-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
-
-
-
 
 @keyframes slide-right {
   0% {
@@ -118,7 +113,6 @@ body{
     transform: translateX(0);
   }
 }
-
 
 .animate-top6 {
   animation-delay:0.6s;
@@ -175,3 +169,5 @@ body{
   background: rgba(255, 255, 255, 0.6);
   filter: blur(750px);
 }
+
+
